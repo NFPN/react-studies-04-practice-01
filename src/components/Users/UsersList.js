@@ -1,21 +1,20 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Card from "../UI/Card";
 import classes from "./UsersList.module.css";
 
-const UsersList = (props) =>{
-
-    //map transform array of users to array of jsx 
-    return (
-        <Card className={classes.users}>
-            <ul>
-                {props.users.map((user) => (
-                    <li key={user.id}>
-                        {user.name} ({user.age} years old) 
-                    </li>
-                ))}
-            </ul>
-        </Card>
-    );
+const UsersList = (props) => {
+  //map transform array of users to array of jsx
+  return (
+    <Card className={classes.users}>
+      <ul>
+        {props.users.map((user) => (
+          <li key={user.id}>
+            {user.name} ({user.age} years old)
+          </li>
+        ))}
+      </ul>
+    </Card>
+  );
 };
 
 export default UsersList;
