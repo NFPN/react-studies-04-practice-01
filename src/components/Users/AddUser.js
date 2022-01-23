@@ -24,7 +24,7 @@ const AddUser = (props) => {
       return;
     }
 
-    //get < 1 works(java script thing), but to make sure we compare numbers use + at the start
+    //"value < 1" works(java script thing), but to make sure we compare numbers use + at the start
     // could also validate age input length but it works without validating that
     if (+enteredAge < 1) {
       SetError({
